@@ -10,9 +10,9 @@
 // ------------------------
 
 const findMax = (arr)=> { 
-    let max= 0;
-    for(let i=0 ; i<= arr.length-1;i++) {
-        if( arr[i] >= max){
+    let max= arr[0];
+    for(var i=1 ; i< arr.length;i++) {
+        if( arr[i] > max){
             max = arr[i];
         }
     }
@@ -32,8 +32,8 @@ const findMax = (arr)=> {
 
 const sumNums = (arr)=>{
     let sum = 0 ;
-    for(let i =0 ; i< arr.lenght ; i++) {
-        if( typeof arr [i] == "number" ){
+    for(let i =0 ; i<= arr.lenght-1 ; i++) {
+        if( typeof arr[i] !== "string" ){
             sum = sum + arr[i] ;
         }
     }
