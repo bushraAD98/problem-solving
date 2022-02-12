@@ -27,9 +27,14 @@
 // -------------------------------------------------------------------------------------------------------
 
 const customerAndAge = (obj) => {
-  for( customerAndAge in obj){
-      console.log("Customer Name :"+obj +", Age :"+obj)
-  }
+  
+for (const element of obj) {
+  console.log("Customer Name :"+obj.element +", Age :"+obj.element);
+  // console.log(element);
+}
+      // console.log("Customer Name :"+obj.name +", Age :"+obj.age)
+  
+  
 };
 
 // -------------------------------------------------------------------------------------------------------

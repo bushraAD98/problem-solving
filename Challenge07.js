@@ -19,15 +19,13 @@
 // ------------------------
 
 const objLat = (obj) => {
-  firstName ,
-   lastName ,
-   age ,
-    hobby 
 
-};
-let first_person = new objLat("Jaber","Saleh",67,"Gaming Sleepingand");
-objLat(first_person);
-console.log("my name is "+first_person.firstName + ""+ first_person.lastName +"I am "+first_person.age+"YO, "+"and I love "+first_person.hobby);
+    console.log("my name is "+obj.firstName + ""+ obj.lastName +"I am "+obj.age+"YO, "+"and I love "+first_person.hobby);
+    return obj;
+}
+// let first_person = new objLat("Jaber","Saleh",67,"Gaming Sleepingand");
+objLat(obj);
+// console.log("my name is "+first_person.firstName + ""+ first_person.lastName +"I am "+first_person.age+"YO, "+"and I love "+first_person.hobby);
 // let firstPerson = new objLat("Jaber","Saleh",67,"Gaming Sleepingand");
 // objLat(firstPerson);
 
@@ -97,7 +95,7 @@ if( yearsOfExperience >= 1 && lastName !== null){
    console.log( arr[i].firstName+arr[i].lastName  +arr[i].tech);
 }
   }  
-  console.log(arr);  
+  return arr; 
 };
 
 // 3) ---------------------

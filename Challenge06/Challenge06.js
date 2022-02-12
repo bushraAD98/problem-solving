@@ -11,10 +11,6 @@
 
 const findMax = (arr)=> { 
 
-    let max= arr[0];
-    for(var i=1 ; i< arr.length;i++) {
-        if( arr[i] > max){
-
     let max= 0;
     for(let i=0 ; i<= arr.length-1;i++) {
         if( arr[i] >= max){
@@ -40,16 +36,18 @@ const sumNums = (arr)=>{
     let sum = 0 ;
 
     for(let i =0 ; i<= arr.lenght-1 ; i++) {
-        if( typeof arr[i] !== "string" ){
-    for(let i =0 ; i< arr.lenght ; i++) {
+    
+
         if( typeof arr [i] == "number" ){
 
             sum = sum + arr[i] ;
         }
     }
-    
+        
     return sum;
 }
+
+
 
 // 3) ---------------------
 // 
@@ -66,4 +64,4 @@ console.log(arr[i]);
     }
 }
 
-module.exports = {findMax , sumNums, reverseArray};
+module.exports = {findMax , sumNums, reverseArray}

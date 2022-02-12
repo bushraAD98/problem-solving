@@ -16,12 +16,9 @@
 // ------------------------
 
 const arrInc = (arr) => {
-    let result = [];
-   result = arr.forEach((element) => {
-  result = element + 10; 
-
-    });
-    return result;
+arr.forEach(function(v, i, a){ a[i] += 10; });
+  
+return arr;
 }
 
 
@@ -37,7 +34,7 @@ const arrInc = (arr) => {
 const roundDecimals = (arr) => {
     arr.forEach(function(element , i , arr)  {
 
-arr[i] = element.roundDecimals;
+arr[i] = Math.round(element);
 
 
     });
@@ -113,12 +110,12 @@ const employeesBonus = (arr) => {
 
     let bonus = 0;
  arr.forEach(function(element ){
-if( arr.section == "Production" && arr.workHours > 8 ){
+if( arr[element]== "Production" && arr.workHours > 8 ){
 bonus += 100;
 arr.salary += bonus;
 
 }
-else if (arr.section == "Production" && arr.workHours < 8 ){
+else if (arr[element] == "Production" && arr.workHours < 8 ){
 
     bonus += 50;
 arr.salary += bonus;
