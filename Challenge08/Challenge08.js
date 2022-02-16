@@ -27,11 +27,15 @@
 // -------------------------------------------------------------------------------------------------------
 
 const customerAndAge = (obj) => {
-  
-for (const element of obj) {
-  console.log("Customer Name :"+obj.element +", Age :"+obj.element);
+  let myArray = [] ;
+  for ( let property in obj){
+      myArray.push(`Customer Name :${property} , Age :${obj[property]}`)
+  }
+  return myArray;
+// for (const element of obj) {
+//   console.log("Customer Name :"+obj.element +", Age :"+obj.element);
   // console.log(element);
-}
+
       // console.log("Customer Name :"+obj.name +", Age :"+obj.age)
   
   
@@ -61,7 +65,11 @@ for (const element of obj) {
 // -------------------------------------------------------------------------------------------------------
 
 const getEntries = (obj) => {
-  
+  let arr =[];
+  for (let [key, value] of Object.entries(obj)) {
+    arr.push(`${key}: ${value}`);
+  }
+  return arr;
 };
 
 // -------------------------------------------------------------------------------------------------------
@@ -102,9 +110,13 @@ const courses = [
 const getInfo = (arr) => {
   let coursesName = [];
   let studentsName = [];
-  // write your code here
-
-  return { coursesName, studentsName };
+  arr.forEach(element => {
+      coursesName.push(element.course)
+      for( let i = 0 ; i<element.Students.length ; i ++){
+      studentsName.push(element.Students[i])
+      }
+  });
+   return { coursesName, studentsName };
 };
 
 //  ------------------------------------------------------------------------------------------------------
@@ -126,7 +138,23 @@ const getInfo = (arr) => {
 //  ------------------------------------------------------------------------------------------------------
 
 const getStudents = (arr) => {
-  // write your code here
+  let newArr =[]
+  for(let i = 0 ; i<arr.length ; i++){
+    var obj ={
+      Student : "",
+      course: "",
+      }
+    courses.forEach(course => {
+      course.Students.forEach(info => {
+        if(info == arr[i]){
+         obj.Student = arr[i];
+          obj.course = course.course ;
+        newArr.push(obj);
+        }
+      });
+    });
+  }
+  return newArr;
 
 };
 

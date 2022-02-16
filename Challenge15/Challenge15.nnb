@@ -1,0 +1,18 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "{\n    \"cells\": [\n        {\n            \"language\": \"markdown\",\n            \"source\": [\n                \"## Hacker Rank\\n\\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\\nFollow the links below:\\nread them carefully and solve them then copy-paste your solution below in Code Block\"\n            ],\n            \"outputs\": []\n        },\n        {\n            \"language\": \"markdown\",\n            \"source\": [\n                \"### **Required**:\"\n            ],\n            \"outputs\": []\n        },\n        {\n            \"language\": \"markdown\",\n            \"source\": [\n                \"#####  [Equality In An Array](https://www.hackerrank.com/challenges/equality-in-a-array/problem?isFullScreen=true)\\n\\nSolution:\"\n            ],\n            \"outputs\": []\n        },\n        {\n            \"language\": \"javascript\",\n            \"source\": [\n                \"\"\n            ],\n            \"outputs\": []\n        },\n        {\n            \"language\": \"markdown\",\n            \"source\": [\n                \"### **Optional**:\"\n            ],\n            \"outputs\": []\n        },\n        {\n            \"language\": \"markdown\",\n            \"source\": [\n                \"#####  [Halloween Sale](https://www.hackerrank.com/challenges/halloween-sale/problem?isFullScreen=true)\\n\\nSolution:\"\n            ],\n            \"outputs\": []\n        },\n        {\n            \"language\": \"javascript\",\n            \"source\": [\n                \"\"\n            ],\n            \"outputs\": []\n        },\n        {\n            \"language\": \"markdown\",\n            \"source\": [\n                \"#####  [Sherlock And Squares](https://www.hackerrank.com/challenges/sherlock-and-squares/problem?isFullScreen=true)\\n\\nSolution:\"\n            ],\n            \"outputs\": []\n        },\n        {\n            \"language\": \"javascript\",\n            \"source\": [\n                \"\"\n            ],\n            \"outputs\": []\n        }\n    ]\n}"
+            ],
+            "outputs": []
+        }
+    ]
+}

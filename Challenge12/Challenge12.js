@@ -18,7 +18,13 @@
 // 
 
 const oddFiltration = (arr) => {
-    // write your code here
+ 
+const odds = arr.filter(number => {
+  return number % 2 !== 0;
+});
+
+console.log(odds);
+return odds;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -70,7 +76,20 @@ const oddFiltration = (arr) => {
 //  2- If one of the names is null dont add it to the full name
 
 const cvsFiltration = (arr) => {
-    // write your code here
+    let res = [];
+    arr.forEach((element , i ,arr) => {
+     if (arr[i].LastName !== null && arr[i].yearsOfExperience > 4 && arr[i].tech == "JS") {
+        //  let firstName = firstName + "" + lastName ;
+      let fullName = arr[i].firstName + " " + arr[i].LastName ;
+       res = [{
+        "fullName" : fullName,
+        "tech" : arr[i].tech
+       }];
+
+     } 
+       
+    });
+    return res;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -85,7 +104,15 @@ const cvsFiltration = (arr) => {
 // 
 
 const vowelsFiltration = (arr) => {
-    // write your code here
+// let res = [];
+// res = arr.map(function (arr) {
+//      arr.replace(/[aeiou]/gi,  '');
+//      return res;
+// });
+const noVowels = arr.filter((word) => {
+  return !word.match(/[aeiou]/g);
+});
+return noVowels;
 } 
 // -------------------------------------------------------------------------------------------------------
 

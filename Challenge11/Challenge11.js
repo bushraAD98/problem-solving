@@ -17,9 +17,13 @@
 // 
 
 function square(arr) {
-    // write your code here
+ return arr.map(function (x) {
+    return Math.pow(x, 2);
+  });
+
+return arr;
 }
-// -------------------------------------------------------------------------------------------------------
+// DONE-------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
 // Challenge 02:
@@ -56,7 +60,10 @@ function square(arr) {
 // Output: ['Adam Anderson', 'Ben Zeller', 'Peter Mccord', 'Fred Sagar', 'Nathan Weiss']
 
 function fullName(arr) {
-    // write your code here
+    let res = [];
+    res = arr.map(authors => `${authors.firstName} ${authors.lastName}`);
+    return res;
+    
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -122,7 +129,13 @@ function fullName(arr) {
 // -------------
 
 function gradesAvg(arr) {
-    // write your code here
+    const newArr = arr.map((element => ({ 
+        ...element,
+       avg : (element.gradsList.reduce((x, y) => x + y)) / element.gradsList.length 
+       
+    })))
+     return newArr;
+
 }
 // -------------------------------------------------------------------------------------------------------
 

@@ -98,7 +98,7 @@ return arr;
 //     },
 //     {
 //         name: "Andrew",
-//         section: "HouseKeeping",
+//         name: "HouseKeeping",
 //         workHours: 9,
 //         salary: "3300$"
 //     }
@@ -107,22 +107,36 @@ return arr;
 
 // ------------------------
 const employeesBonus = (arr) => {
-
     let bonus = 0;
- arr.forEach(function(element ){
-if( arr[element]== "Production" && arr.workHours > 8 ){
-bonus += 100;
-arr.salary += bonus;
-
+    let sum = 0;
+    let res = [];
+ arr.forEach(function(element ,i ,arr ){
+if( arr[i].section == "Production" && arr[i].workHours > 8 ){
+// bonus += 100;
+ arr[i].salary += 100;
+// res = [{
+//     "name" : arr[i].name ,
+// "section" : arr[i].section ,
+// "workHours" : arr[i].workHours ,
+// "salary" : sum
+// }];
 }
-else if (arr[element] == "Production" && arr.workHours < 8 ){
+else if (arr[i].section == "Production" && arr[i].workHours < 8 ){
 
-    bonus += 50;
-arr.salary += bonus;
-}
+//     bonus += 50;
+ arr[i].salary += 50; }
+// res = [{
+//     "name" : arr[i].name ,
+// "section" : arr[i].section ,
+// "workHours" : arr[i].workHours ,
+// "salary" : sum
+// }];
+// }
 
  });   
 
+
+ 
 return arr ;
 
 }
